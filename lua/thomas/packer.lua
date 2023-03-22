@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use('feline-nvim/feline.nvim')
   use('lewis6991/gitsigns.nvim')
+  use('jose-elias-alvarez/null-ls.nvim')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
