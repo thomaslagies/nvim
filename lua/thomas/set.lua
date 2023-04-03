@@ -30,3 +30,5 @@ vim.opt.colorcolumn = "120"
 vim.g.mapleader = " "
 vim.opt.iskeyword:append("-","_")
 
+vim.g.copilot_no_tab_map = "v:true"
+
