@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   use("ellisonleao/gruvbox.nvim")
@@ -18,27 +17,10 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use('feline-nvim/feline.nvim')
   use('lewis6991/gitsigns.nvim')
-  use('jose-elias-alvarez/null-ls.nvim')
   use('github/copilot.vim')
---  use {
---    "zbirenbaum/copilot.lua",
---    cmd = "Copilot",
---    event = "InsertEnter",
---    config = function()
---      require("copilot").setup({
---        panel = {
---          auto_refresh = true
---        },
---        suggestions = {
---          auto_trigger = true,
---        },
---        filetypes = {
---          markdown = true
---        },
---        copilot_node_command = vim.fn.expand("$HOME") .. "/.nvm/versions/node/v16.19.1/bin/node",
---      })
---    end,
---  }
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
   use { 
     "folke/trouble.nvim",
     requires = "nvim-tree/nvim-web-devicons",
