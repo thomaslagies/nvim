@@ -8,5 +8,6 @@ vim.cmd[[highlight CopilotSelected ctermfg=0 ctermbg=Yellow]]
 -- vim.cmd cycle through copilot suggestions
 vim.cmd[[imap <silent><expr> <C-n> copilot#Next()]]
 
-
+-- vim.cmd disable in json
+vim.cmd[[autocmd FileType json let b:copilot_enabled = 0]]
 
